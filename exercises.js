@@ -18,6 +18,17 @@ function area(l1, l2){
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
+function crazySum(int1, int2){
+    if(int1 == int2){
+        return int1*int2*3
+    }
+    else {
+        return int1*int2
+    }
+}
+
+console.log(crazySum(3, 6))
+
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
