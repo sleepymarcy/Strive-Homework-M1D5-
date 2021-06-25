@@ -130,17 +130,26 @@ function reverseString(string){
     let firstStep = string.split("")
     let secondStep = firstStep.reverse()
     let thirdStep = secondStep.join("")
-    
+
     return thirdStep
 }
 
-console.log(reverseString("Strive"))
+// console.log(reverseString("Strive"))
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR CODE HERE */
+function upperFirst(string){
+    let separate = string.toLowerCase().split(" ")
+    for (i = 0; separate.length; i++){
+        separate[i] = separate[i].charAt(0).toUpperCase() + separate[i].substring(1)
+    }
+
+    return separate.join(" ")
+}
+
+console.log(upperFirst("kaka is my firend"))
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
