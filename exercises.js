@@ -159,13 +159,19 @@ function cutString(string){
     return string.slice(1, -1)
 }
 
-console.log(cutString("Martyna"))
+// console.log(cutString("Martyna"))
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR CODE HERE */
+function giveMeRandom(n){
+    let randomNum = Array.from({length: n}, () => Math.floor(Math.random() * 11))
+    return randomNum
+}
+
+// console.log(giveMeRandom(5))
+
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
