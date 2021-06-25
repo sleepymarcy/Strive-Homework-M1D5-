@@ -110,7 +110,17 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
+function check3and7(num){
+    if(num<0){
+        return num + " is not a positive number"
+    }
+    else if(num>0 && num%3==0 || num%7==0){
+        return num + " is a positive number that is a multiply of 3 or 7"
+    }
+}
 
+// console.log(check3and7(-9))
+// console.log(check3and7(21))
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
